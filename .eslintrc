@@ -15,7 +15,11 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "linebreak-style": 0,
-    "max-len": "off"
+    "max-len": "off",
+    "react/jsx-no-bind": [1, {
+      "allowBind": true,
+      "allowArrowFunctions": true
+    }]
   },
   "plugins": [
     "react"

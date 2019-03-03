@@ -1,22 +1,10 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-export default class Product extends Component {
-  state = {
-    isOpen: false,
-  }
-
-  handleClick = (event) => {
-    const { isOpen } = this.state;
-    event.preventDefault();
-    this.setState({
-      isOpen: !isOpen,
-    });
-  }
-
+export default class Product extends PureComponent {
   render() {
-    const { props, state } = this;
-    const { catalog } = props;
-    const description = state.isOpen && (
+    const { props } = this;
+    const { catalog, isOpen, onProductClick } = props;
+    const description = isOpen && (
       <div>
         <div className="availability">
           Наличие:
@@ -27,7 +15,7 @@ export default class Product extends Component {
       </div>
     );
     return (
-      <div role="grid" tabIndex={0} className="post-module" onClick={this.handleClick} onKeyDown={this.handleClick}>
+      <div role="grid" tabIndex={0} className="post-module" onClick={onProductClick} onKeyDown={onProductClick}>
         <div className="thumbnail">
           <img alt="" src={catalog.img} />
         </div>
