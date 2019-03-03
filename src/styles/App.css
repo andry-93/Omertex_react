@@ -1,5 +1,4 @@
 @import './Reset.css';
-@import './Media.css';
 
 h1 {
   font-size: 2em;
@@ -80,5 +79,8 @@ footer {
   padding: 5px 20px;
   color: #606060;
   font-size: .8rem;
+  z-index: 1;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+
+@import './Media.css';
