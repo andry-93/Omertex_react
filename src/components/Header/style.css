@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  background-color: #225D96;
+  color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  flex-direction: row;
+  align-items: center;
+ }
+
+.bars {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 20px;
+  transition: color .2s linear;
+}
+
+.bars:hover {
+  color: #DF9F3D;
+}
+
+.logo {
+  display: inline-block;
+  width: 125px;
+}
+
+.logo img {
+  max-height: 92px;
+  height: auto;
+  width: 100%;
+}

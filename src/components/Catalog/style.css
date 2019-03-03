@@ -1,0 +1,62 @@
+.column {
+  width: 50%;
+  padding: 0 25px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.post-module {
+  position: relative;
+  z-index: 1;
+  display: block;
+  background: #F2F2F2;
+  min-width: 270px;
+  height: 470px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.post-module .thumbnail {
+  background: black;
+  height: 400px;
+  overflow: hidden;
+}
+
+.post-module .thumbnail img {
+  display: block;
+  width: 120%;
+  transition: all 0.3s linear 0s;
+}
+
+.post-module:hover .thumbnail img {
+  width: 100%;
+}
+
+.post-content {
+  position: absolute;
+  bottom: 0;
+  background: #F2F2F2;
+  width: 100%;
+  padding: 30px;
+}
+
+.post-content .title {
+  margin: 0;
+  padding: 0 0 10px;
+  color: #333333;
+  font-size: 26px;
+  font-weight: 700;
+}
+.post-content .price {
+  margin: 0;
+  padding: 0 0 20px;
+  color: #e74c3c;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.post-content .description {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.8em;
+}
